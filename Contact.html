@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact.html</title>
+        <link rel="stylesheet" href="./style1.css" />
+    </head>
+
+    <header>
+        <nav id=>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <button id="scheme1">Light</button>
+    <button id="scheme2">Dark</button>
+    <button id="scheme0">Default</button>
+    <body>
+        <ol>
+            <li><h3>Email : <a id="email" href="mailto:belaladbm@gmail.com">belaladbm@gmail.com</a></h3></li>
+            <li><h3>Phone : (902) 410-3342</h3></li>
+        </ol>
+        <div class="survey">
+            <a href="https://www.dal.ca/"><img width="300" height="200" src="dal.png" alt="dal"></img></a>
+            <div class="form-container">
+                <form id ="questions" action="#">
+                    <h2 id="survey">Survey</h2>
+                    <div class ="input-container">
+                        <label for="q1">Rate the website from 1-10</label>
+                        <input type="number" id="q1" name="q1">
+                    </div>
+                    <div class ="input-container">
+                        <label for="q2">Enter your dal email</label>
+                        <input type="email" id="q2" name="q2"/>
+                    </div>
+                    <div class ="input-container">
+                        <label for="q3">Enter your favourite color:</label>
+                        <input type="text" id="q3" name="q3">
+                    </div>
+                    <div class ="input-container">
+                        <label for="q4">Please select the date:</label>
+                        <input type="date" id="q4" name="q4">
+                    </div>
+                    <div class ="input-container">
+                        <label for="q5">What's something you like about this website:</label>
+                        <input type="textarea" id="q5" name="q5">
+                    </div>
+                    <div class="button-container">
+                        <input id="submit-button" type="submit" value="Sign up" />
+                    </div>
+                    <div id="message"></div>
+                </form>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

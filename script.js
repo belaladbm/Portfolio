@@ -1,3 +1,38 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the image element by its ID
+    const image = document.getElementById('me');
+
+    // Add a click event listener to the image
+    image.addEventListener('click', function() {
+        // This function will be called every time the image is clicked
+        alert("Don't click on me!");
+    });
+});
+
+document.getElementById("scheme1").addEventListener("click",function(){
+    document.body.className = "light";
+    localStorage.setItem("colorScheme", "light");
+    console.log("light")
+});
+document.getElementById("scheme2").addEventListener("click",function(){
+    document.body.className = "dark";
+    localStorage.setItem("colorScheme", "dark");
+    console.log("dark")
+});
+document.getElementById("scheme0").addEventListener("click",function(){
+    document.body.className = "default";
+    localStorage.setItem("colorScheme", "default");
+    console.log("default")
+});
+function applyTheme(){
+    const saved = localStorage.getItem("colorScheme");
+    if (saved) {
+        document.body.className = saved;
+    }
+}
+document.addEventListener("DOMContentLoaded", applyTheme);
+
+
 function validateForm() {
     const submit = document.getElementById("submit-button");
     const message = document.getElementById("message");
